@@ -1,0 +1,31 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "codex-goal-drafter",
+  "version": "0.1.1",
+  "description": "Interview for a Codex goal contract and independently audit the result against evidence.",
+  "author": {
+    "name": "neonwatty",
+    "url": "https://github.com/neonwatty"
+  },
+  "homepage": "https://github.com/neonwatty/codex-goal-drafter",
+  "repository": "https://github.com/neonwatty/codex-goal-drafter",
+  "keywords": ["codex", "goal", "acceptance-criteria", "audit"],
+  "extensions": {
+    "com.openai": {
+      "requires_local_executor": true,
+      "interface": {
+        "displayName": "Codex Goal Contracts",
+        "shortDescription": "Define and audit evidence-backed Codex goals",
+        "longDescription": "Interview for an agreed goal contract, save it in the project, run native Codex /goal against it, and independently audit the final result against each acceptance criterion.",
+        "developerName": "neonwatty",
+        "category": "Coding",
+        "capabilities": ["Interactive", "Read", "Write"],
+        "websiteURL": "https://github.com/neonwatty/codex-goal-drafter",
+        "defaultPrompt": [
+          "$goal-contract help me define a goal before I run /goal",
+          "$goal-audit review a completed goal against its saved contract"
+        ]
+      }
+    }
+  }
+}

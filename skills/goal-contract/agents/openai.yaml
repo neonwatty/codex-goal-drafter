@@ -1,0 +1,4 @@
+interface:
+  display_name: "Goal Contract"
+  short_description: "Interview and confirm a Codex /goal contract"
+  default_prompt: "Use $goal-contract to interview me, show a goal contract for confirmation, then save it and draft a Codex /goal."

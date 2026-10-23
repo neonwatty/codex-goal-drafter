@@ -1,4 +1,4 @@
 interface:
   display_name: "Codex Goal Drafter"
-  short_description: "Draft auditable Codex /goal statements"
-  default_prompt: "Use $codex-goal-drafter to turn this task into a clear Codex /goal statement with acceptance criteria and verification."
+  short_description: "Interview, review, then draft a Codex /goal"
+  default_prompt: "Use $codex-goal-drafter to interview me about this goal, show me a reviewable contract, and draft the /goal after I confirm it."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Goal Audit"
+  short_description: "Independently check goal criteria against evidence"
+  default_prompt: "Use $goal-audit to review this saved goal contract and the completed work as a separate read-only reviewer."
